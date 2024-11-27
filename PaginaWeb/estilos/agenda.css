@@ -1,0 +1,130 @@
+/* Estilos específicos para la Agenda */
+
+/* Espaciado y márgenes de la agenda */
+.container {
+    margin-top: 60px; /* Ajuste para espacio superior */
+}
+
+/* Estilo de los botones de la agenda */
+.nav-tabs .nav-link {
+    color: #0056b3;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Estilo para los tab-content */
+.tab-content {
+    margin-top: 20px;
+}
+
+/* Estilos para los elementos de la agenda (tabla) */
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table td {
+    font-size: 1.1rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para los pacientes */
+.card {
+    border: 1px solid #007bff;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+/* Estilo de pie de página para la agenda */
+footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Barra de navegación - Añadido al CSS de agenda */
+.navbar {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo */
+    position: sticky; /* Barra fija al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    padding-left: 15px; /* Espaciado izquierdo */
+    padding-right: 15px; /* Espaciado derecho */
+}
+
+/* Agregar espaciado en los elementos de la barra */
+.navbar-nav .nav-link {
+    padding-left: 15px; /* Espaciado para los enlaces */
+    padding-right: 15px; /* Espaciado para los enlaces */
+}
+
+/* Relleno para la barra en dispositivos pequeños y grandes */
+.navbar .container-fluid {
+    padding-left: 20px; /* Aumentar el relleno en la izquierda */
+    padding-right: 20px; /* Aumentar el relleno en la derecha */
+}
+
+/* Efecto sutil en el logo */
+.navbar-brand img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animación al pasar el cursor sobre el logo */
+.navbar-brand:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del logo */
+    opacity: 0.9; /* Reduce un poco la opacidad para darle un toque elegante */
+}
+
+/* Animación para los enlaces de la barra */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para color y movimiento */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Cambia el color de los enlaces */
+    transform: translateY(-5px); /* Mueve ligeramente el enlace hacia arriba */
+}
+
+/* Efecto en la barra de navegación al hacer scroll: se cambia el fondo */
+.navbar.scrolled {
+    background-color: #333; /* Cambia el fondo cuando se hace scroll */
+}
+
+/* Animación sutil al pasar el cursor por el botón de menú en móviles */
+.navbar-toggler-icon {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.navbar-toggler-icon:hover {
+    transform: rotate(90deg); /* Gira el icono del menú cuando se pasa el cursor */
+}
+
+/* Agregar un cambio de color al fondo de la barra de navegación cuando se hace scroll (sin JavaScript) */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar.scrolled {
+    background-color: #003366; /* Cambia el color del fondo al hacer scroll */
+}
+
