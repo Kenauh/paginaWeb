@@ -1,57 +1,28 @@
-/* Estilos específicos para el Historial Clínico */
 
-/* Estilo de los botones del acordeón */
-.accordion-button {
-    background-color: #007bff;
-    color: white;
-    border: 1px solid #0056b3;
+.text-custom {
+    /* Fuente Lato */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color: #000000; /* Color personalizado, puedes ajustarlo */
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Hacer el texto en negritas */
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #0056b3;
-    color: white;
-}
-
-.accordion-body {
-    background-color: #f7f7f7;
-}
-
-.accordion-item {
-    margin-bottom: 10px;
-}
-
-/* Títulos de las secciones */
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #0056b3;
-}
-
-/* Espaciado y márgenes */
-.container {
-    margin-top: 50px; /* Ajuste para espacio superior */
-}
-
-/* Acordeón activo */
-.accordion-button:not(.collapsed) {
-    border-color: #003366;
-    background-color: #0056b3;
-    color: white;
-}
-
-/* Fondo de los elementos del acordeón */
-.accordion-body {
-    background-color: #f9f9f9;
-}
-
-/* Estilo del pie de página */
+/* Fondo del pie de página */
 footer {
     background-color: #f8f9fa;
-    padding: 15px 0;
-    margin-top: 30px;
-}
-
-footer p {
     color: #333;
 }
+
+/* Estilo para los botones dentro del acordeón */
+.card-header button {
+    font-weight: bold;
+}
+
+/* Espaciado entre el acordeón */
+.card {
+    margin-bottom: 1rem;
+}
+
+
+
 

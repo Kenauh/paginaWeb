@@ -1,0 +1,107 @@
+/* Barra de navegación */
+/* Barra de navegación */
+.navbar {
+    padding: 1rem 3rem; /* Reduce el espacio dentro de la barra de navegación */
+    height: 90px; /* Reduce la altura de la barra */
+    background-color: #ffffff !important; /* Cambia el fondo de la barra a blanco */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    position: sticky; /* Barra fija al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Utiliza Flexbox para centrar contenido */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade sombra a la barra */
+    margin: 0; /* Elimina cualquier margen */
+    border: none; /* Elimina el borde negro */
+}
+
+.navbar-brand .logo-text {
+    font-family: 'Roboto', sans-serif; /* Cambiar a la tipografía Roboto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negritas */
+    color: #808080; /* Color gris */
+    margin-left: 10px; /* Espacio entre el logo y el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Aumenta el espaciado entre las letras */
+}
+
+/* Fondo de la barra de navegación cuando se hace scroll */
+.navbar.scrolled {
+    background-color: #ffffff !important; /* Asegura que el fondo permanezca blanco incluso cuando se haga scroll */
+}
+
+/* Centrar el logo y los enlaces */
+.navbar-nav {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+.nav-link {
+    font-size: 16px; /* Reducido el tamaño de los enlaces */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-right: 25px; /* Aumenta el espacio entre los enlaces */
+    color: #000000; /* Color de los enlaces (negro) */
+    font-weight: bold; /* Pone los enlaces en negrita */
+    font-family: 'Poppins', sans-serif; /* Cambiar la fuente a Poppins */
+}
+
+/* Cambiar el color de los enlaces cuando se pasa el cursor */
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Cambia el color de los enlaces al pasar el cursor */
+    transform: translateY(-5px); /* Mueve ligeramente el enlace hacia arriba */
+}
+
+/* Personalización de la imagen del logo */
+.navbar-brand {
+    margin-left: 25px; /* Ajusta el margen izquierdo del logo */
+    display: flex;
+    align-items: center; /* Asegura que el logo se centre */
+}
+
+.navbar-brand img {
+    height: 80px; /* Reducido el tamaño del logo a 80px */
+    margin-right: 20px; /* Ajusta el margen entre la imagen y los enlaces */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto de animación al pasar el cursor sobre el logo */
+.navbar-brand:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del logo */
+    opacity: 0.85; /* Reduce un poco la opacidad para darle un toque elegante */
+}
+
+/* Ajustes para el botón del menú en dispositivos móviles */
+.navbar-toggler-icon {
+    width: 40px; /* Aumenta el tamaño del ícono del menú */
+    height: 40px; /* Aumenta la altura del ícono del menú */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Personalización de la imagen de inicio de sesión */
+#inicio_de_sesion img {
+    height: 80px; /* Igual que el tamaño del logo */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efecto de animación al pasar el cursor sobre la imagen de inicio de sesión */
+#inicio_de_sesion:hover img {
+    transform: scale(1.1); /* Igual que el efecto sobre el logo */
+    opacity: 0.85; /* Reduce un poco la opacidad para darle un toque elegante */
+}
+
+.navbar-toggler-icon:hover {
+    transform: rotate(90deg); /* Gira el ícono del menú cuando se pasa el cursor */
+}
+
+/* Cambiar el color del texto dentro de la barra de navegación */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand, 
+.navbar .navbar-toggler-icon {
+    color: #000000 !important; /* Asegura que todos los textos sean de color negro */
+}
+
+
+
