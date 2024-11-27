@@ -50,3 +50,9 @@
 .navbar.scrolled {
     background-color: #003366; /* Cambia el color del fondo al hacer scroll */
 }
+/* Asegura que todas las imágenes de las cards tengan el mismo tamaño */
+.card-img-top {
+    width: 100%;          /* Ocupa todo el ancho de la card */
+    height: 200px;        /* Define una altura fija para todas las imágenes */
+    object-fit: cover;    /* Asegura que la imagen se recorte de manera que cubra todo el espacio disponible */
+}
