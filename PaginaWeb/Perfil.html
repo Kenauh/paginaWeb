@@ -6,63 +6,261 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title>Perfil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-      
-        .bg{
-            background-image: url(imagenes/Perfil.png);
-            background-position: center center;
-        }
-    </style>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="estilos/barra-navegacion-doctores.css" rel="stylesheet">
+   
 </head>
 
-<body class="d-flex justify-content-center align-items-center vh-100">
+<body>
+ 
+<!-- Aquí empieza la barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top py-2">
+    <!-- Logo Izquierdo -->
+    <a href="inicio.html" class="navbar-brand d-flex align-items-center" >
+        <img src="imagenes/Logotipo.jpg" alt="Logo Izquierda" class="img-fluid" > 
+        <span class="logo-text">PFJP Hospital</span>
+    </a>
 
-    <div class="container w-75 bg-light rounded shadow">
+    <!-- Botón de colapso para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="especialidades.html ">Especialidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Contactos2.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Perfil.html">Perfil</a>
+            </li>
+        </ul>
+
+        <!-- Imagen Derecha -->
+        <a id="inicio_de_sesion" href="Login.html" class="d-flex align-items-center">
+            <img src="imagenes/Perfil.png" alt="Logo Derecha" class="img-fluid" >
+        </a>
+         <!-- Segunda imagen de login -->
+         <a id="inicio_de_sesion" href="LoginDoctor.html" class="d-flex align-items-center ml-3">
+            <img src="imagenes/logindoc.png" alt="Logo Derecha 2" class="img-fluid" >
+        </a>
+    </div>
+</nav>
+<!-- Aquí termina la barra de navegación -->
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class=" w-75 bg-light rounded shadow">
         <div class="row allign-items-stretch" >
-            <div class="col bg d-none d-lg-block rounded">
+            <div class="col bg-info d-none d-lg-block rounded">
+                <div class="d-flex justify-content-center">
+                    <img src="imagenes/Perfil.png" class="img-fluid mt-5" style="width: 300px;" alt="Logotipo">
+                </div>
+                <div>
+                    <h4 class="text-center mt-4">Nombre Completo</h4>
+                    <p class="text-center"> Juan Perez Cruz Aguilar</p>
+                    <h4 class="text-center mt-2">Correo Electrónico</h4>
+                    <p class="text-center"> JuanPCA@gmail.com</p>
+                    <h4 class="text-center mt-2">Contraseña</h4>
+                    <p class="text-center"> ***********************</p>
+                    <h4 class="text-center mt-2">Telefono de Contacto</h4>
+                    <p class="text-center mb-5"> 5512345678</p>
+                </div>
             </div>              
             <div class="col">
                 <div class="text-end">
-                    <a href="inicio.html">
-                    <img src="imagenes/Perfil.png" width="48">
-                    </a>
-                </div>
-                <h2 class="fw-light text-center py-5">Inicio de Sesión</h2>
+                    
+                    <div class="col d-flex flex-column justify-content-center align-items-center vh-100">
+                        
+                        <button class="btn btn-primary my-5 w-100" type="button" data-bs-toggle="modal" data-bs-target="#agendarModal">
+                            Agendar Cita
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="agendarModal" tabindex="-1" aria-labelledby="agendarModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="agendarModalLabel">Agendar Cita con Médico</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                        
+                              <!-- Modal Body (Formulario) -->
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="medicoName" class="form-label">Nombre del Médico</label>
+                                    <input type="text" class="form-control" id="medicoName" placeholder="Ingresa el nombre del médico" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="date" class="form-label">Fecha de la Cita</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="time" class="form-label">Hora de la Cita</label>
+                                    <input type="time" class="form-control" id="time" required>
+                                  </div>
+                                </form>
+                              </div>
+                        
+                              <!-- Modal Footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <a href="Perfil.html">
+                                <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-                <!-- Formulario para inicio de sesión -->
+                        <button class="btn btn-primary my-5 w-100" type="button" data-bs-toggle="modal" data-bs-target="#reagendarModal">
+                            Reagendar Cita
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="reagendarModal" tabindex="-1" aria-labelledby="reagendarModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="reagendarModalLabel">Reagendar Cita con Médico</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                        
+                              <!-- Modal Body (Formulario) -->
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="medicoName" class="form-label">Nombre del Médico</label>
+                                    <input type="text" class="form-control" id="medicoName" placeholder="Ingresa el nombre del médico" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="newDate" class="form-label">Fecha de la Cita</label>
+                                    <input type="date" class="form-control" id="newDate" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="newTime" class="form-label">Hora de la Cita</label>
+                                    <input type="time" class="form-control" id="newTime" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="comments" class="form-label">Comentarios Adicionales</label>
+                                    <textarea class="form-control" id="comments" rows="3" placeholder="Escribe algún comentario o detalles adicionales..."></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                        
+                              <!-- Modal Footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <a href="Perfil.html">
+                                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        
+                        <button class="btn btn-danger my-5 w-100" type="button" data-bs-toggle="modal" data-bs-target="#cancelarModal">
+                            Cancelar Cita
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="cancelarModal" tabindex="-1" aria-labelledby="cancelarModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="cancelarModalLabel">Cancelar Cita</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                        
+                              <!-- Modal Body (Formulario) -->
+                              <div class="modal-body">
+                                <form id="cancelarCitaForm">
+                                  <div class="mb-3">
+                                    <label for="medicoCancel" class="form-label">Nombre del Médico</label>
+                                    <input type="text" class="form-control" id="medicoCancel" placeholder="Ingresa el nombre del médico" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="cancelDate" class="form-label">Fecha de la Cita</label>
+                                    <input type="date" class="form-control" id="cancelDate" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="cancelTime" class="form-label">Hora de la Cita</label>
+                                    <input type="time" class="form-control" id="cancelTime" required>
+                                  </div>
+                        
+                                  <div class="mb-3">
+                                    <label for="reason" class="form-label">¿Por qué decidiste cancelar?</label>
+                                    <textarea class="form-control" id="reason" rows="3" placeholder="Escribe el motivo de la cancelación" required></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                        
+                              <!-- Modal Footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <a href="Perfil.html">
+                                <button type="button" class="btn btn-danger" id="confirmCancel">Confirmar Cancelación</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-                <form action="#">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                    <div class="d-grid mb-4">
-                        <a href="Perfil.html">
-                        <button type="button" class="btn btn-primary w-100">Continuar</button>
-                        </a>
-                    </div>
-                    <div class="mb-4">
-                        <label for="¿No tienes cuenta?" class="form-label">¿No tienes cuenta?</label>
-                    </div>
-                    <div class="d-grid mb-5">
-                        <a href="Registro.html">
-                            <button type="button" class="btn btn-info w-100">Regístrate</button>
-                        </a>
-                    </div>
-                </form>
+                        <button class="btn btn-primary my-5 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#historialInput" aria-expanded="false" aria-controls="historialInput">
+                            Historial
+                        </button>
+                        
+                        <!-- Sección de colapso que muestra el mensaje -->
+                        <div class="collapse" id="historialInput">
+                            <div class="alert alert-info mt-3">
+                                <p class="text-start">Diagnóstico: Dolor de cabeza persistente</p>
+                                <p class="text-start">Medicaciones: Paracetamol, 500mg</p>
+                                <p class="text-start">Observaciones: Necesita seguimiento neurológico.</p>
+                            </div>
+                        </div>
+                        
 
+                    </div>
             </div>
         </div>
+        <footer class="text-center py-4 bg-light">
+            <p>&copy; 2024 Torre Médica PFJP - Todos los derechos reservados.</p>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
