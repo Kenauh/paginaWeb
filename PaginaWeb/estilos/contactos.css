@@ -1,0 +1,33 @@
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.contact-section h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.contact-section p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.contact-section .social-icons a {
+    color: #007bff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-section .social-icons a:hover {
+    color: #0056b3;
+}
