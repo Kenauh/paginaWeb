@@ -9,18 +9,21 @@ footer {
     color: #333;
 }
 /* Estilo para el slider */
+/* Estilo para el contenedor del slider */
 .carousel-inner {
     height: 400px; /* Ajusta esta altura según tus necesidades */
     border-radius: 15px; /* Borde redondeado */
-    overflow: hidden; /* Para que las imágenes no se salgan de los bordes redondeados */
+    overflow: hidden; /* Oculta las partes que sobresalgan */
 }
 
-/* Estilo para las imágenes dentro del slider */
+/* Estilo para las imágenes del slider */
 .carousel-item img {
-    object-fit: cover; /* Para ajustar la imagen sin distorsionarla */
-    height: 100%;
     width: 100%;
+    height: auto;
+    max-height: 50%; /* Limita la altura máxima para que no sobresalga del contenedor */
+    object-fit: contain; /* Las imágenes se ajustarán dentro del contenedor */
 }
+
 
 /* Opcional: Ajustar las flechas de navegación para que se adapten mejor al tamaño reducido */
 .carousel-control-prev-icon,
