@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.galeria img, 
+.medico img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-citas {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-citas:hover {
+    background-color: #0056b3;
+}
