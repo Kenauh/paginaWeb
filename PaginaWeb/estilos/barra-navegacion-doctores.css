@@ -17,7 +17,7 @@
 .navbar-brand {
     display: flex;
     align-items: center;
-    margin-left: 10px; /* Espaciado inicial */
+    margin-right: 20px; /* Aumenta el espacio a la derecha del logo y eslogan */
 }
 
 .navbar-brand img {
@@ -32,21 +32,21 @@
 }
 
 .navbar-brand .logo-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;/* Tipografía personalizada */
-    font-size: 24px;
-    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Mantén la tipografía */
+    font-size: 14px; /* Tamaño reducido */
+    font-weight: normal; /* Peso normal */
     color: #808080; /* Gris */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: none; /* Sin mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras reducido */
+    margin: 0; /* Sin márgenes adicionales */
+    line-height: 1.2; /* Ajusta el espacio vertical */
 }
+
 
 /* Estilo del menú de navegación */
 .navbar-nav {
-    display: flex; /* Organización horizontal */
-    align-items: center;
-    justify-content: center;
+    margin-left: 100px; /* Opcional: Aumenta más espacio si es necesario */
 }
-
 .nav-link {
     font-size: 16px;
     text-transform: uppercase; /* Texto en mayúsculas */
