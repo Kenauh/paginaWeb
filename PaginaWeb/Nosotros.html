@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - PFJP HOSPITAL</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilos/estilos.css" rel="stylesheet">
-    <link href="estilos/nosotros.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="estilos/barra-navegacion-doctores.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Barra de navegación -->
+<!-- Aquí empieza la barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top py-2">
     <!-- Logo Izquierdo -->
-    <a class="navbar-brand d-flex align-items-center" href="inicio.html">
-        <img src="imagenes/Logotipo.jpg" alt="Logo Izquierda" class="img-fluid" style="max-height: 35px;"> 
+    <a href="inicio.html" class="navbar-brand d-flex align-items-center" >
+        <img src="imagenes/Logotipo.jpg" alt="Logo Izquierda" class="img-fluid" > 
+        <span class="logo-text">PFJP Hospital</span>
     </a>
 
     <!-- Botón de colapso para dispositivos móviles -->
@@ -25,29 +29,34 @@
     <!-- Menú de navegación -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link text-white" href="inicio.html">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Especialidades</a>
+                <a class="nav-link text-white" href="">Especialidades</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Promociones</a>
+                <a class="nav-link text-white" href="">Promociones</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="">Contacto</a>
             </li>
         </ul>
 
         <!-- Imagen Derecha -->
         <a id="inicio_de_sesion" href="Login.html" class="d-flex align-items-center">
-            <img src="imagenes/IMGLogin.png" alt="Logo Derecha" class="img-fluid" style="max-height: 30px;">
+            <img src="imagenes/IMGLogin.png" alt="Logo Derecha" class="img-fluid" >
+        </a>
+         <!-- Segunda imagen de login -->
+         <a id="inicio_de_sesion" href="Login2.html" class="d-flex align-items-center ml-3">
+            <img src="imagenes/logindoc.png" alt="Logo Derecha 2" class="img-fluid" >
         </a>
     </div>
 </nav>
+<!-- Aquí termina la barra de navegación -->
 
 <!-- Contenido de la página Nosotros -->
 <div class="container mt-5 pt-5">
