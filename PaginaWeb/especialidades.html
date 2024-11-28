@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades - PFJP Hospital</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="estilos/barra-navegacion-doctores.css" rel="stylesheet">
+    <link href="especialidades.css" rel="stylesheet" >
+</head>
+<body>
+    <!-- Aquí empieza la barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top py-2">
+    <!-- Logo Izquierdo -->
+    <a href="inicio.html" class="navbar-brand d-flex align-items-center" >
+        <img src="imagenes/Logotipo.jpg" alt="Logo Izquierda" class="img-fluid" > 
+        <span class="logo-text">PFJP Hospital</span>
+    </a>
+
+    <!-- Botón de colapso para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Especialidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Contacto</a>
+            </li>
+        </ul>
+
+        <!-- Imagen Derecha -->
+        <a id="inicio_de_sesion" href="Login.html" class="d-flex align-items-center">
+            <img src="imagenes/IMGLogin.png" alt="Logo Derecha" class="img-fluid" >
+        </a>
+         <!-- Segunda imagen de login -->
+         <a id="inicio_de_sesion" href="Login2.html" class="d-flex align-items-center ml-3">
+            <img src="imagenes/logindoc.png" alt="Logo Derecha 2" class="img-fluid" >
+        </a>
+    </div>
+</nav>
+<!-- Aquí termina la barra de navegación -->
+    <!-- Encabezado -->
+    <header class="header text-center">
+        <h1>Especialidades - PFJP Hospital</h1>
+    </header>
+
+    <!-- Galería de Instalaciones -->
+    <section id="galeria-instalaciones" class="container mt-5">
+        <h2 class="text-center mb-4">Instalaciones</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagenes/instalacion1.jpg" alt="Instalación 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/instalacion2.jpg" alt="Instalación 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="imagenes/instalacion3.jpg" alt="Instalación 3" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Médicos y Enfermedades -->
+    <section id="medicos-enfermedades" class="container mt-5">
+        <h2 class="text-center mb-4">Médicos y Enfermedades Tratantes</h2>
+        <div class="row">
+            <!-- Médico 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico1.jpg" class="card-img-top" alt="Dr. Juan Pérez">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Juan Pérez</h5>
+                        <p><strong>Consultorio:</strong> 101</p>
+                        <p><strong>Teléfono:</strong> 555-123-4567</p>
+                        <p><strong>Especialidad:</strong> Cardiología</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dr. Juan Pérez">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico2.jpg" class="card-img-top" alt="Dra. Sofía González">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Sofía González</h5>
+                        <p><strong>Consultorio:</strong> 102</p>
+                        <p><strong>Teléfono:</strong> 555-987-6543</p>
+                        <p><strong>Especialidad:</strong> Pediatría</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dra. Sofía González">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico3.jpg" class="card-img-top" alt="Dr. Andrés Ruiz">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Andrés Ruiz</h5>
+                        <p><strong>Consultorio:</strong> 103</p>
+                        <p><strong>Teléfono:</strong> 555-456-7890</p>
+                        <p><strong>Especialidad:</strong> Neurología</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dr. Andrés Ruiz">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico4.jpg" class="card-img-top" alt="Dra. Elena Torres">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Elena Torres</h5>
+                        <p><strong>Consultorio:</strong> 104</p>
+                        <p><strong>Teléfono:</strong> 555-654-3210</p>
+                        <p><strong>Especialidad:</strong> Nutrición</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dra. Elena Torres">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico5.jpg" class="card-img-top" alt="Dr. Carlos Martínez">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Carlos Martínez</h5>
+                        <p><strong>Consultorio:</strong> 105</p>
+                        <p><strong>Teléfono:</strong> 555-789-1234</p>
+                        <p><strong>Especialidad:</strong> Ginecología</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dr. Carlos Martínez">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico6.jpg" class="card-img-top" alt="Dra. Luisa Gómez">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Luisa Gómez</h5>
+                        <p><strong>Consultorio:</strong> 106</p>
+                        <p><strong>Teléfono:</strong> 555-321-6548</p>
+                        <p><strong>Especialidad:</strong> Dermatología</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dra. Luisa Gómez">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Médico 7 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="imagenes/medico7.jpg" class="card-img-top" alt="Dr. Mario Fernández">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Mario Fernández</h5>
+                        <p><strong>Consultorio:</strong> 107</p>
+                        <p><strong>Teléfono:</strong> 555-654-7893</p>
+                        <p><strong>Especialidad:</strong> Oftalmología</p>
+                        <button class="btn btn-citas btn-block" data-toggle="modal" data-target="#modal-citas" data-medico="Dr. Mario Fernández">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Continúa con los médicos 8 a 15 utilizando la misma estructura -->
+        </div>
+    </section>
+    
+    <!-- Modal para Agendar Citas -->
+    <div class="modal fade" id="modal-citas" tabindex="-1" aria-labelledby="modal-citas-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-citas-label">Agendar Cita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-citas">
+                        <div class="form-group">
+                            <label for="nombre-medico">Médico:</label>
+                            <input type="text" class="form-control" id="nombre-medico" name="nombre-medico" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora">Hora:</label>
+                            <input type="time" class="form-control" id="hora" name="hora" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agendar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4 mt-5 bg-light">
+        <p>&copy; 2024 PFJP Hospital - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Pasa el nombre del médico al modal
+        $('#modal-citas').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Botón que activó el modal
+            var medico = button.data('medico'); // Extrae la información
+            var modal = $(this);
+            modal.find('#nombre-medico').val(medico); // Pasa el nombre al input
+        });
+    </script>
+</body>
+</html>
+
