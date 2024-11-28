@@ -8,22 +8,3 @@ footer {
     background-color: #f8f9fa;
     color: #333;
 }
-/* Estilo para el slider */
-.carousel-inner {
-    height: 400px; /* Ajusta esta altura según tus necesidades */
-    border-radius: 15px; /* Borde redondeado */
-    overflow: hidden; /* Para que las imágenes no se salgan de los bordes redondeados */
-}
-
-/* Estilo para las imágenes dentro del slider */
-.carousel-item img {
-    object-fit: cover; /* Para ajustar la imagen sin distorsionarla */
-    height: 100%;
-    width: 100%;
-}
-
-/* Opcional: Ajustar las flechas de navegación para que se adapten mejor al tamaño reducido */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-size: 50%; /* Reduce el tamaño del icono */
-}
