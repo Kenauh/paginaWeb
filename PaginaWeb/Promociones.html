@@ -4,12 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Promociones</title>
-  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="promociones.css">
+  <link href="estilos/promociones.css" rel="stylesheet" >
+  <link href="estilos/barra-navegacion-doctores.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top py-2">
+    <!-- Logo Izquierdo -->
+    <a href="inicio.html" class="navbar-brand d-flex align-items-center" >
+        <img src="imagenes/Logotipo.jpg" alt="Logo Izquierda" class="img-fluid" > 
+        <span class="logo-text">PFJP Hospital</span>
+    </a>
+
+    <!-- Botón de colapso para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Especialidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="">Contacto</a>
+            </li>
+        </ul>
+
+        <!-- Imagen Derecha -->
+        <a id="inicio_de_sesion" href="Login.html" class="d-flex align-items-center">
+            <img src="imagenes/IMGLogin.png" alt="Logo Derecha" class="img-fluid" >
+        </a>
+         <!-- Segunda imagen de login -->
+         <a id="inicio_de_sesion" href="Login2.html" class="d-flex align-items-center ml-3">
+            <img src="imagenes/logindoc.png" alt="Logo Derecha 2" class="img-fluid" >
+        </a>
+    </div>
+</nav>
   <div class="container my-5">
     <h1 class="text-center mb-4">Promociones Especiales</h1>
     <div class="row g-4">
